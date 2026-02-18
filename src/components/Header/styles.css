@@ -17,3 +17,7 @@ header {
     justify-content: space-between;
     font-size: 16px;
 }
+
+.bold {
+    font-weight: 700;
+}

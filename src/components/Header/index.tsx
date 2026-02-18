@@ -1,5 +1,6 @@
 import "./styles.css";
 import homeIcon from "../../assets/homeIcon.svg";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
 
@@ -7,12 +8,12 @@ export default function Header() {
         <header>
             <div className="container app-header">
                 <nav className="app-nav">
-                    <div>
+                    <NavLink to="/home" className={({ isActive }: any) => isActive ? "bold" : ""} >
                         Início
-                    </div>
-                    <div>
+                    </NavLink>
+                    <NavLink to="/products" className={({ isActive }: any) => isActive ? "bold" : ""} >
                         Produtos
-                    </div>
+                    </NavLink>
                     <div>
                         Sobre nós
                     </div>
