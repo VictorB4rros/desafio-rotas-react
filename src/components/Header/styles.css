@@ -1,0 +1,19 @@
+header {
+    height: 70px;
+    background-color: var(--color-bg-secondary);
+    color: var(--color-font-secondary);
+}
+
+.app-header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app-nav {
+    width: 225px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
