@@ -1,6 +1,6 @@
 import "./styles.css";
 import homeIcon from "../../assets/homeIcon.svg";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
 
@@ -18,9 +18,9 @@ export default function Header() {
                         Sobre nós
                     </div>
                 </nav>
-                <div>
+                <Link to="/home">
                     <img src={homeIcon} alt="Home" />
-                </div>
+                </Link>
             </div>
         </header>
     );
