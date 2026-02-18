@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import "./styles.css";
 
 export default function Products() {
@@ -7,15 +7,15 @@ export default function Products() {
         <main className="container">
             <div className="product-nav-container mb20">
                 <nav className="product-nav">
-                    <div>
+                    <NavLink to="/products/computers" className={({ isActive }: any) => isActive ? "bold" : ""} >
                         Computadores
-                    </div>
-                    <div>
+                    </NavLink>
+                    <NavLink to="/products/electronics" className={({ isActive }: any) => isActive ? "bold" : ""} >
                         Eletrônicos
-                    </div>
-                    <div>
+                    </NavLink>
+                    <NavLink to="/products/books" className={({ isActive }: any) => isActive ? "bold" : ""} >
                         Livros
-                    </div>
+                    </NavLink>
                 </nav>
             </div>
             <Outlet />
