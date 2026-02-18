@@ -14,9 +14,9 @@ export default function Header() {
                     <NavLink to="/products" className={({ isActive }: any) => isActive ? "bold" : ""} >
                         Produtos
                     </NavLink>
-                    <div>
+                    <NavLink to="/about" className={({ isActive }: any) => isActive ? "bold" : ""} >
                         Sobre nós
-                    </div>
+                    </NavLink>
                 </nav>
                 <Link to="/home">
                     <img src={homeIcon} alt="Home" />
